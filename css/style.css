@@ -1,0 +1,572 @@
+:root {
+  --roboto: "Roboto", sans-serif;
+  --super: "Supermercado One", cursive;
+  --hover: #977555;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading h3 {
+  color: #545454;
+  padding-bottom: 10px;
+}
+
+.heading i {
+  color: #545454;
+  font-size: 20px;
+}
+
+.heading p {
+  width: 600px;
+  color: #545454;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* =================================================================
+                            common css ends 
+ ================================================================ */
+
+.text-w {
+  color: #fff;
+}
+
+.text-c {
+  text-align: center;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-23 {
+  font-size: 23px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.ttc {
+  text-transform: capitalize;
+}
+
+.robo-r {
+  font-family: var(--roboto);
+  font-weight: 400;
+}
+
+.robo-m {
+  font-family: var(--roboto);
+  font-weight: 500;
+}
+
+.robo-b {
+  font-family: var(--roboto);
+  font-weight: 700;
+}
+
+.super-r {
+  font-family: var(--super);
+  font-weight: 400;
+}
+
+/* =================================================================
+                            typography css ends 
+ ================================================================ */
+
+nav {
+  height: 60px;
+  background: linear-gradient(#f37932, #f23d3d);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+nav .navBg {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .navBg .logo {
+  height: 60px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+nav .navBg .logo img {
+  width: 100%;
+}
+
+nav .navBg .item {
+  height: 60px;
+  width: 575px;
+}
+
+nav .navBg .item ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .navBg .item ul li a {
+  line-height: 60px;
+  transition: all linear 0.3s;
+}
+
+nav .navBg .item ul li a i {
+  transition: all linear 0.3s;
+}
+
+nav .navBg .item ul li a:hover,
+nav .navBg .item ul li a i:hover {
+  color: var(--hover);
+}
+
+/* =================================================================
+                            nav css ends 
+ ================================================================ */
+
+#bannerBg {
+  height: 500px;
+  background: url(../images/banner.jpg) no-repeat center / cover;
+  position: relative;
+  z-index: 1;
+}
+
+#bannerBg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+#bannerBg .banner {
+  height: 500px;
+}
+
+#bannerBg .banner h1 {
+  padding-top: 250px;
+  margin-bottom: 10px;
+}
+
+#bannerBg .banner a {
+  padding-right: 10px;
+  transition: all linear 0.3s;
+}
+
+#bannerBg .banner a:hover {
+  color: var(--hover);
+}
+
+/* =================================================================
+                            banner css ends 
+ ================================================================ */
+
+#aboutBg {
+  height: 430px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#aboutBg .about {
+  height: 430px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#aboutBg .about .aboutText {
+  height: 100%;
+  width: 570px;
+}
+
+#aboutBg .about .aboutText h2 {
+  padding-top: 50px;
+  color: #545454;
+}
+
+#aboutBg .about .aboutText p {
+  padding-top: 20px;
+  color: #545454;
+  line-height: 25px;
+  padding-right: 35px;
+}
+
+#aboutBg .about .aboutText a {
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 25px;
+  background: linear-gradient(#f23d3d, #f37932);
+  color: #fff;
+  margin-top: 55px;
+  position: relative;
+  z-index: 1;
+  transition: all linear 0.5s;
+}
+
+#aboutBg .about .aboutText a::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(#f37932, #f23d3d);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transition: all linear 0.5s;
+}
+
+#aboutBg .about .aboutText a:hover {
+  color: #f1f1f1;
+}
+
+#aboutBg .about .aboutText a:hover:before {
+  width: 100%;
+}
+
+#aboutBg .about .aboutImage {
+  height: 100%;
+  width: 570px;
+}
+
+#aboutBg .about .aboutImage img {
+  height: 100%;
+  width: 100%;
+}
+
+/* =================================================================
+                            about css ends 
+ ================================================================ */
+
+#galleryBg {
+  height: 260px;
+  margin-bottom: 100px;
+}
+
+#galleryBg .gallery {
+  height: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#galleryBg .gallery .galleryItem {
+  width: 280px;
+  height: 100%;
+  position: relative;
+}
+
+#galleryBg .gallery .galleryItem img {
+  height: 100%;
+  width: 100%;
+}
+
+#galleryBg .gallery .galleryItem .overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f23d3d, #f37932);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all linear 0.5s;
+}
+
+#galleryBg .gallery .galleryItem:hover .overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#galleryBg .gallery .galleryItem .overlay i {
+  font-size: 36px;
+  color: #fff;
+}
+
+#galleryBg .gallery .galleryItem .overlay h3 {
+  color: #fff;
+  padding-top: 20px;
+}
+
+/* =================================================================
+                            about css ends 
+ ================================================================ */
+
+#teamBg {
+  height: 740px;
+}
+
+#teamBg .team {
+  height: 740px;
+}
+
+#teamBg .team .teamHeading {
+  height: 140px;
+}
+
+#teamBg .team .teamContent {
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+#teamBg .team .teamContent .teamItem {
+  width: 570px;
+  height: 280px;
+  display: flex;
+}
+
+#teamBg .team .teamContent .teamItem .teamLeft {
+  width: 285px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#teamBg .team .teamContent .teamItem .teamLeft img {
+  width: 100%;
+  height: 100%;
+}
+
+#teamBg .team .teamContent .teamItem .teamLeft .overlay {
+  width: 285px;
+  height: 100%;
+  background: linear-gradient(rgba(255, 0, 0, 0.604), rgba(255, 94, 0, 0.604));
+  position: absolute;
+  top: 0;
+  left: -285px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all linear 0.5s;
+}
+
+#teamBg .team .teamContent .teamItem .teamLeft .overlay a {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+#teamBg .team .teamContent .teamItem:hover .teamLeft .overlay {
+  left: 0;
+}
+
+#teamBg .team .teamContent .teamItem .teamRight {
+  width: 285px;
+  height: 100%;
+  background: linear-gradient(#f23d3d, #f37932);
+  transition: all linear 0.5s;
+}
+
+#teamBg .team .teamContent .teamItem:hover .teamRight {
+  background: linear-gradient(#f37932, #f23d3d);
+}
+
+#teamBg .team .teamContent .teamItem .teamRight h2 {
+  color: #ddd;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+
+#teamBg .team .teamContent .teamItem .teamRight h4 {
+  color: #ddd;
+  padding-bottom: 5px;
+  margin-left: 10px;
+}
+
+#teamBg .team .teamContent .teamItem .teamRight h5 {
+  color: #ddd;
+  padding-bottom: 5px;
+  margin-left: 10px;
+}
+
+#teamBg .team .teamContent .teamItem .teamRight a {
+  color: #ddd;
+  margin-left: 10px;
+}
+
+#teamBg .team .teamContent .teamItem .teamRight ul {
+  display: flex;
+  margin-top: 50px;
+}
+
+#teamBg .team .teamContent .teamItem .teamRight ul li {
+  margin-right: 15px;
+}
+
+#teamBg .team .teamContent .teamItem .teamRight ul li a i {
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 20px;
+  transition: all linear 0.5s;
+}
+
+#teamBg .team .teamContent .teamItem .teamRight ul li:hover a i {
+  color: yellow;
+  border-color: yellow;
+}
+
+/* =================================================================
+                            team css ends 
+ ================================================================ */
+
+#counterBg {
+  height: 330px;
+  background: url(../images/banner.png) no-repeat center / cover;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+#counterBg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(243, 122, 1, 0.8), rgba(242, 61, 1, 0.9));
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#counterBg .counter {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#counterBg .counter .counterItem {
+  height: 100%;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#counterBg .counter .counterItem i {
+  font-size: 35px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+#counterBg .counter .counterItem p {
+  padding-top: 20px;
+}
+
+/* =================================================================
+                            counter css ends 
+ ================================================================ */
+
+#choose {
+  height: 430px;
+  margin-bottom: 100px;
+}
+
+#choose .choose {
+  height: 430px;
+}
+
+#choose .choose .chooseHeading {
+  height: 140px;
+}
+
+#choose .choose .chooseContent {
+  height: 290px;
+  display: flex;
+}
+
+#choose .choose .chooseContent .text {
+  height: 290px;
+  width: 670px;
+}
+
+#choose .choose .chooseContent .text p {
+  color: #545454;
+  line-height: 20px;
+  padding-right: 20px;
+  padding-top: 26px;
+}
+
+#choose .choose .chooseContent .text p:last-child {
+  margin-top: -5px;
+}
+
+#choose .choose .chooseContent .image {
+  height: 290px;
+  width: 500px;
+  background: #54f169;
+}
+
+#choose .choose .chooseContent .image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* =================================================================
+                            choose css ends 
+ ================================================================ */
